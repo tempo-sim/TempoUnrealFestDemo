@@ -1,2 +1,2 @@
-# TempoSample
-A sample Unreal project using the Tempo plugins
+# TempoUnrealFestDemo
+Tempo's demo for UnrealFest 2024
