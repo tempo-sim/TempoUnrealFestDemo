@@ -2,9 +2,9 @@
 
 using UnrealBuildTool;
 
-public class TempoSample : ModuleRules
+public class TempoUnrealFestDemo : ModuleRules
 {
-	public TempoSample(ReadOnlyTargetRules Target) : base(Target)
+	public TempoUnrealFestDemo(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
