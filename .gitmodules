@@ -1,0 +1,4 @@
+[submodule "Plugins/Tempo"]
+	path = Plugins/Tempo
+	url = git@github.com:tempo-sim/Tempo.git
+	branch = tempo_submodule
