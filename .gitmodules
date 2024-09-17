@@ -2,3 +2,6 @@
 	path = Plugins/Tempo
 	url = git@github.com:tempo-sim/Tempo.git
 	branch = tempo_submodule
+[submodule "Content/TempoAgentsVehicles"]
+	path = Content/TempoAgentsVehicles
+	url = git@github.com:tempo-sim/TempoAgentsVehicles.git
