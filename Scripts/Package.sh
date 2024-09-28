@@ -44,10 +44,14 @@ if [ "$HOST_PLATFORM" = "Win64" ]; then
   -skipbuildeditor -cook -target=$PROJECT_NAME -unrealexe="UnrealEditor-Cmd.exe" -platform=$TARGET_PLATFORM -project="$PROJECT_ROOT/$PROJECT_NAME.uproject" -installed -stage -package \
   -build -iostore -prereqs -stagingirectory="$PROJECT_ROOT/Packaged" -clientconfig=Development -ScriptDir="$PROJECT_ROOT/Plugins/Tempo/TempoROS/Scripts"
 elif [ "$HOST_PLATFORM" = "Mac" ]; then
+  # Not sure why, but we need to help Cesium find the SunPosition dynamic library during packaging
+  export DYLD_LIBRARY_PATH="$UNREAL_ENGINE_PATH/Engine/Plugins/Runtime/SunPosition/Binaries/Mac"
   ./Engine/Build/BatchFiles/RunUAT.sh Turnkey -command=VerifySdk -platform=$TARGET_PLATFORM -UpdateIfNeeded -project="$PROJECT_ROOT/$PROJECT_NAME.uproject" BuildCookRun -nop4 -utf8output -nocompileeditor \
   -skipbuildeditor -cook -target=$PROJECT_NAME -unrealexe="UnrealEditor-Cmd" -platform=$TARGET_PLATFORM -project="$PROJECT_ROOT/$PROJECT_NAME.uproject" -installed -stage -archive -package \
   -build -iostore -prereqs -archivedirectory="$PROJECT_ROOT/Packaged" -clientconfig=Development -ScriptDir="$PROJECT_ROOT/Plugins/Tempo/TempoROS/Scripts"
 elif [ "$HOST_PLATFORM" = "Linux" ]; then
+  # Not sure why, but we need to help Cesium find the SunPosition dynamic library during packaging
+  export LD_LIBRARY_PATH="$UNREAL_ENGINE_PATH/Engine/Plugins/Runtime/SunPosition/Binaries/Linux"
   ./Engine/Build/BatchFiles/RunUAT.sh Turnkey -command=VerifySdk -platform=$TARGET_PLATFORM -UpdateIfNeeded -project="$PROJECT_ROOT/$PROJECT_NAME.uproject" BuildCookRun -nop4 -utf8output -nocompileeditor \
   -skipbuildeditor -cook -target=$PROJECT_NAME -unrealexe="UnrealEditor" -platform=$TARGET_PLATFORM -project="$PROJECT_ROOT/$PROJECT_NAME.uproject" -installed -stage -package \
   -build -iostore -prereqs -stagingdirectory="$PROJECT_ROOT/Packaged" -clientconfig=Development -ScriptDir="$PROJECT_ROOT/Plugins/Tempo/TempoROS/Scripts"
