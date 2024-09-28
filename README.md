@@ -22,8 +22,9 @@ The demo also includes Tempo's Python API. You must have Python (>=3.9) installe
 - In the same folder as this README file there should be two folders: `tempo_py` and `example_clients`.
 - Make a Python virtual environment `python3 -m venv <your_venv>` and [activate](https://docs.python.org/3/library/venv.html#how-venvs-work) it.
 - Run `pip install <path_to_tempo_py>`
-- Run the Python interpreter (`python`)
-- Try out the `tempo` API:
+
+Here are some fun things you can try:
+- Try using the `tempo` package directly from the Python interpreter (run `python`):
 ```
 import tempo.tempo_time as tt
 tt.pause()
@@ -33,13 +34,11 @@ tt.step() # Only works in Fixed Step time mode
 import tempo.tempo_geographic as tg
 tg.set_time_of_day(hour=8)
 ```
-- Exit the Python interpreter
 - Try streaming camera images with the provided `CameraPreview.py` client:
 ```
 python <path_to_example_clients>/CameraPreview.py --name SpectatorCamera --type color
 ```
-- Try `depth` and `label` image `types` too
-- While the spectator is attached to a vehicle, you can also stream that vehicle's cameras (by `name`). Every vehicle has 8 cameras, named:
+Try `depth` and `label` image types too. You can stream any combination of cameras and image types simultaneously. While the spectator is attached to a vehicle, you can also stream that vehicle's cameras (by name). Every vehicle has 8 cameras, named:
 ```
 FollowCamera
 FrontCenterCamera
@@ -49,6 +48,10 @@ RearCenterCamera
 RearRightCamera
 RearLeftCamera
 DriverCamera
+```
+- Try visualizing lane graph and traffic controller states with the provided `LaneGraphPreview.py` client:
+```
+python <path_to_example_clients>/LaneGraphPreview.py
 ```
 
 We hope you enjoy the demo and are inspired to build your own simulator!
