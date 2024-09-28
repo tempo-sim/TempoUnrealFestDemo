@@ -38,28 +38,29 @@ label_to_hue = np.array([
     0,      # Walls = 4
     0,      # Fences = 5
     130,    # Poles = 6
-    0,      # TrafficLight = 7
-    40,     # TrafficSigns = 8
+    170,    # TrafficLight = 7
+    10,     # TrafficSigns = 8
     70,     # Vegetation = 9
     0,      # Terrain = 10
     90,     # Sky = 11
     150,    # Pedestrians = 12
-    0,      # Rider = 13
-    0,      # Car = 14
-    0,      # Truck = 15
-    0,      # Bus = 16
+    160,    # Rider = 13
+    60,     # Car = 14
+    40,     # Truck = 15
+    80,     # Bus = 16
     0,      # Train = 17
     0,      # Motorcycle = 18
-    0,      # Bicycle = 19
+    110,    # Bicycle = 19
     0,      # Static = 20
-    0,      # Dynamic = 21
+    50,     # Dynamic = 21
     0,      # Other = 22
     0,      # Water = 23
     30,     # RoadLines = 24
     120,    # Ground = 25
     0,      # Bridge = 26
     0,      # RailTrack = 27
-    0       # GuardRail = 28
+    0,      # GuardRail = 28
+    0       # Unknown = 29
 ], dtype=np.uint8)
 
 
@@ -67,6 +68,7 @@ def show_label_image(image, name):
     image_bytes = io.BytesIO(image.data)
     image_array = np.frombuffer(image_bytes.getvalue(), dtype=np.uint8)
     image_array = image_array.reshape((image.height, image.width))
+    image_array = image_array.clip(0,len(label_to_hue)-1)
     lut = label_to_hue[image_array]
     saturation = 255
     value = 255
