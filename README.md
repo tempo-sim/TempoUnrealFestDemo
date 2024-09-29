@@ -47,7 +47,12 @@ tt.play()
 tt.step() # Only works in Fixed Step time mode
 
 import tempo.tempo_geographic as tg
-tg.set_time_of_day(hour=0) # Check out "night mode"
+tg.set_time_of_day(hour=6) # Sunrise
+tg.set_time_of_day(hour=12) # Noon
+tg.set_time_of_day(hour=20) # Sunset
+tg.set_time_of_day(hour=0) # Midnight
+tg.set_day_cycle_relative_rate(10000) # Speed up day/night cycles
+tg.set_day_cycle_relative_rate(1) # Back to normal
 ```
 - Try streaming camera images with the provided `CameraPreview.py` client:
 ```
