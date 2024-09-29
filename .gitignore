@@ -86,3 +86,7 @@ TempoEnv
 
 # pycache folders
 __pycache__
+
+# Packaged Dir
+Packaged
+
