@@ -9,6 +9,9 @@ Interested in learning more about Tempo? Visit us at [temposimulation.com](http:
 
 ## Pre-Built Releases
 [You can find pre-built releases of the demo here](https://drive.google.com/drive/folders/1dqdmuhC0qEBxhdnEvxWI3AdmlIzjFbyg?usp=drive_link)
+
+We recommend using a machine with at least 16Gb of memory.
+
 ### Windows:
 - Run `Windows/TempoUnrealFestDemo.exe`
 ### Linux:
