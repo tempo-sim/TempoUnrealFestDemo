@@ -1,7 +1,6 @@
 [submodule "Plugins/Tempo"]
 	path = Plugins/Tempo
-	url = https://github.com:tempo-sim/Tempo.git
-	branch = tempo_submodule
+	url = https://github.com/tempo-sim/Tempo.git
 [submodule "Content/TempoAgentsVehicles"]
 	path = Content/TempoAgentsVehicles
-	url = https://github.com:tempo-sim/TempoAgentsVehicles.git
+	url = https://github.com/tempo-sim/TempoAgentsVehicles.git
