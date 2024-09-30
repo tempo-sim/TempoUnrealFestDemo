@@ -22,7 +22,8 @@ The demo relies on a number of third-party plugins and data sources including:
 - [Cesium for Unreal](https://cesium.com/platform/cesium-for-unreal/)'s streaming 3D map tiles
 - [Aerometrex](https://aerometrex.com.au/)'s high-quality Denver model
 - Epic's [City Sample Vehicles](https://www.unrealengine.com/marketplace/en-US/product/city-sample-vehicles?sessionInvalidated=true) content pack
-Note that Tempo is not tied to any of the above directly. You can find examples of integrating Tempo with other content sources and plugins on our website. This project highlights its versatility, showing exactly what was required to adapt Tempo to this content.
+
+Note that Tempo is not tied to any of the above directly.You can find examples of integrating Tempo with other content sources and plugins on our website. This project highlights its versatility, showing exactly what was required to adapt Tempo to this content.
 
 ## Basic Controls
 - W,A,S,D,Q,E and click/drag: Control the spectator
