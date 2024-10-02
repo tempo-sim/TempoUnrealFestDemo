@@ -1,6 +1,10 @@
 # TempoUnrealFestDemo
 Tempo's demo for UnrealFest 2024
 
+<img width="600" alt="Screenshot 2024-10-01 at 8 46 17 PM" src="https://github.com/user-attachments/assets/dc8664e3-6772-4a84-8bb3-657c8208a551">
+<br />
+<br />
+
 [Tempo](https://github.com/tempo-sim/Tempo/) is a free and open-source suite of Unreal Engine plugins for simulation.
 
 We built this demo to give you a preview of what Tempo can do. Tempo is designed to work for many types of simulations. This particular demo is a simple city driving simulator in a real location (Denver, CO).
