@@ -23,6 +23,7 @@ We recommend using a machine with at least 16Gb of memory.
 ### Mac:
 - Run `TempoUnrealFestDemo.app`
 - The app is not notarized by Apple, so you must do the special [dance](https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unknown-developer-mh40616/15.0/mac/15.0) to open it
+- If that still doesn't work for you, try opening it through your terminal (`open TempoUnrealFestDemo.app`)
 
 ## About the Demo
 The demo relies on a number of third-party plugins and data sources including:
