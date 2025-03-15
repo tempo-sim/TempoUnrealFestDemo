@@ -12,6 +12,7 @@ We built this demo to give you a preview of what Tempo can do. Tempo is designed
 Interested in learning more about Tempo? Visit us at [temposimulation.com](http://temposimulation.com)
 
 ## Building from Source
+- This demo supports Linux, Mac, and Windows, but all only on Unreal 5.4.4
 - Clone the project and **don't forget to `--recurse-submodules`**
 - From the project root, using Git Bash, run:
   - `./Plugins/Tempo/Setup.sh` (performs one-time setup, modifying your Unreal 5.4 installation)
