@@ -56,7 +56,7 @@ You can try Tempo's Python API when building from source
 
 On Windows, from the project root, using Git Bash, run:
 - `source <project_root>/TempoEnv/Scripts/activate`
-- Start the python interpreter from the venv we just activated (`python` or `winpyt python`, depending on your environment)
+- Start the python interpreter from the venv we just activated (`python` or `winpty python`, depending on your environment)
 
 On Linux or Mac, from the project root, run:
 - `source <project_root>/TempoEnv/bin/activate`
