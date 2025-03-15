@@ -11,6 +11,16 @@ We built this demo to give you a preview of what Tempo can do. Tempo is designed
 
 Interested in learning more about Tempo? Visit us at [temposimulation.com](http://temposimulation.com)
 
+## Building from Source
+- This demo supports Linux, Mac, and Windows, but all only on Unreal 5.4.4
+- Clone the project and **don't forget to `--recurse-submodules`**
+- From the project root (using Git Bash if on Windows) run:
+  - `./Plugins/Tempo/Setup.sh` (performs one-time setup, modifying your Unreal 5.4 installation)
+  - `./Scripts/Build.sh`
+  - `./Scripts/Run.sh`
+- Open the `Maps/CesiumTrafficTest` map
+- Hit Play
+
 ## Pre-Built Releases
 [You can find pre-built releases of the demo here](https://drive.google.com/drive/folders/1dqdmuhC0qEBxhdnEvxWI3AdmlIzjFbyg?usp=drive_link)
 
@@ -42,7 +52,17 @@ Note that Tempo is not tied to any of the above directly.You can find examples o
 - Enter: Step time # Only works in Fixed Step time mode
 
 ## Python API
-The demo also includes Tempo's Python API. You must have Python (>=3.9) installed to use it.
+You can try Tempo's Python API when building from source
+
+On Windows, from the project root, using Git Bash, run:
+- `source <project_root>/TempoEnv/Scripts/activate`
+- Start the python interpreter from the venv we just activated (`python` or `winpyt python`, depending on your environment)
+
+On Linux or Mac, from the project root, run:
+- `source <project_root>/TempoEnv/bin/activate`
+- Start the python interpreter from the venv we just activated (`python`)
+
+The pre-built releases also include Tempo's Python API. We recommend using Python 3.11.
 - In the same folder as this README file there are two folders: `tempo_py` and `example_clients`.
 - Make a Python virtual environment `python3 -m venv <your_venv>` and [activate](https://docs.python.org/3/library/venv.html#how-venvs-work) it.
 - Run `pip install <path_to_tempo_py>`
@@ -63,6 +83,14 @@ tg.set_time_of_day(hour=0) # Midnight
 tg.set_day_cycle_relative_rate(10000) # Speed up day/night cycles
 tg.set_day_cycle_relative_rate(1) # Back to normal
 ```
+
+## Example Python Clients
+We also included some example Python clients for you to try. You should activate the Python virtual environment (see above) before running them.
+
+When building from source the example clients are in `Content/Python/ExampleClients`
+
+In the pre-built releases they are in the `example_clients` folder.
+
 - Try streaming camera images with the provided `CameraPreview.py` client:
 ```
 python <path_to_example_clients>/CameraPreview.py --name SpectatorCamera --type color
