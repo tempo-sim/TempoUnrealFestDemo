@@ -14,7 +14,7 @@ Interested in learning more about Tempo? Visit us at [temposimulation.com](http:
 ## Building from Source
 - This demo supports Linux, Mac, and Windows, but all only on Unreal 5.4.4
 - Clone the project and **don't forget to `--recurse-submodules`**
-- From the project root, using Git Bash, run:
+- From the project root (using Git Bash if on Windows) run:
   - `./Plugins/Tempo/Setup.sh` (performs one-time setup, modifying your Unreal 5.4 installation)
   - `./Scripts/Build.sh`
   - `./Scripts/Run.sh`
